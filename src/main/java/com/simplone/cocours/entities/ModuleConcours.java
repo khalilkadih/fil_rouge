@@ -11,14 +11,16 @@ import java.io.Serializable;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class Module implements Serializable {
+public class ModuleConcours implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String reference;
+
     @ManyToOne
     private Concours concours;
+
     private int coefModuleConcours;
 }

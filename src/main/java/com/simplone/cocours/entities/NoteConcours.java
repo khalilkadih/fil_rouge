@@ -12,8 +12,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class NoteConcours  implements Serializable {
-    @OneToOne( cascade = CascadeType.REMOVE,mappedBy = "noteConcours")
-    private RetenueEcrit retenueEcrit;
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -21,4 +19,7 @@ public class NoteConcours  implements Serializable {
     private Long id;
     private double noteEcrit;
     private double noteOral;
+
+    @OneToOne( cascade = CascadeType.REMOVE,mappedBy = "noteConcours")
+    private RetenueEcrit retenueEcrit;
 }

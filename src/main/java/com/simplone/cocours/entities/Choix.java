@@ -18,8 +18,10 @@ public class Choix implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private int numChoix;
+
     @OneToMany
     private List<Concours> concours;
+
     @ManyToOne(cascade = CascadeType.REMOVE)
     private User etudiantPostule;
 }

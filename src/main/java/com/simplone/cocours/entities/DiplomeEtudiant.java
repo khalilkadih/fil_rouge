@@ -21,6 +21,7 @@ public class DiplomeEtudiant implements Serializable {
     private int anneeObtention;
     @OneToOne
     private Mention mention;
+
     private double note;
 
 }

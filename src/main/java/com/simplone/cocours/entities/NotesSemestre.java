@@ -17,9 +17,12 @@ public class NotesSemestre implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     @ManyToOne(cascade = CascadeType.REMOVE)
     private User etudiantPostule;
+
     private String refSemestre;
+
     private double note;
 
 }

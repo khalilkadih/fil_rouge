@@ -31,8 +31,10 @@ public class User implements Serializable {
 
     @OneToMany(mappedBy = "etudiantPostule", cascade = CascadeType.REMOVE)
     private List<NotesSemestre> notesSemestres;
+
     @ManyToMany(fetch =FetchType.EAGER)
     private Collection<Role> roles= new ArrayList<>();
+
     @OneToMany(mappedBy = "etudiantPostule", cascade = CascadeType.REMOVE)
     private List<Choix> choixs;
 

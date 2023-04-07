@@ -18,14 +18,20 @@ public class Concours implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @OneToMany(mappedBy = "concours")
-    private List<Module> modules;
+    private List<ModuleConcours> modules;
+
     private String reference;
+
     private int anneeConcours;
+
     @Temporal(TemporalType.DATE)
     private Date dateConcoursEcrit;
+
     @Temporal(TemporalType.DATE)
     private Date dateConcoursOral;
+
     private String refFiliere;
     private int nbreplace;
     private int nbreplaceConcoursEcrit;
