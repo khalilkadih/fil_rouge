@@ -23,11 +23,11 @@ public class User implements Serializable {
     private String password;
     private String telephone;
     private Date dateDeNaissance;
+    private String adressPersonnelle;
 
     @OneToOne(cascade = CascadeType.REMOVE)
     private DiplomeEtudiant diplomeEtudiant;
 
-    private String adressPersonnelle;
 
     @OneToMany(mappedBy = "etudiantPostule", cascade = CascadeType.REMOVE)
     private List<NotesSemestre> notesSemestres;

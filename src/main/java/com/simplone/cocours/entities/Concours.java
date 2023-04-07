@@ -21,9 +21,6 @@ public class Concours implements Serializable {
 
     @OneToMany(mappedBy = "concours")
     private List<ModuleConcours> modules;
-
-    private String reference;
-
     private int anneeConcours;
 
     @Temporal(TemporalType.DATE)
@@ -32,9 +29,10 @@ public class Concours implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date dateConcoursOral;
 
-    private String refFiliere;
     private int nbreplace;
     private int nbreplaceConcoursEcrit;
     private int nbreplaceConcoursOral;
+    @ManyToOne
+    private Filiere filiere;
 
 }
