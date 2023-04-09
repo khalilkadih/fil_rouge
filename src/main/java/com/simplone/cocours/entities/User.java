@@ -24,6 +24,8 @@ public class User implements Serializable {
     private String telephone;
     private Date dateDeNaissance;
     private String adressPersonnelle;
+    private String niveau;
+
 
     @OneToOne(cascade = CascadeType.REMOVE)
     private DiplomeEtudiant diplomeEtudiant;
