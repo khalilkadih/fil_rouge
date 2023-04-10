@@ -17,10 +17,8 @@ public class ModuleConcours implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String reference;
-
+    private String nameOfModule;
     @ManyToOne
     private Concours concours;
-
     private int coefModuleConcours;
 }

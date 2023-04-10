@@ -17,11 +17,9 @@ public class DiplomeEtudiant implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String refDiplome;
+    private String nameDiplome;
     private int anneeObtention;
-    @OneToOne
     private Mention mention;
-
     private double note;
 
 }

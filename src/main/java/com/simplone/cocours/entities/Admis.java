@@ -12,14 +12,14 @@ import java.util.List;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class RetenueEcrit implements Serializable {
+public class Admis implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @OneToMany
-    private List<User>  candidature;
+    private List<Choix>  chiox;
     @OneToMany
     private List<Concours> concours;
 

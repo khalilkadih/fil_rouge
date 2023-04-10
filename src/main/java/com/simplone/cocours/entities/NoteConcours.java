@@ -21,5 +21,5 @@ public class NoteConcours  implements Serializable {
     private double noteOral;
 
     @OneToOne( cascade = CascadeType.REMOVE,mappedBy = "noteConcours")
-    private RetenueEcrit retenueEcrit;
+    private Admis retenueEcrit;
 }

@@ -17,7 +17,10 @@ public class NoteModuleConours implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @ManyToOne(cascade = CascadeType.REMOVE)
-    private RetenueEcrit retenueEcrit;
-    private String refModuleConcours;
+    private Admis retenueEcrit;
+
+    @ManyToOne
+    @JoinColumn(name = "module_concours_id")
+    private ModuleConcours ModuleConcours;
     private double note;
 }

@@ -21,8 +21,7 @@ public class NotesSemestre implements Serializable {
     @ManyToOne(cascade = CascadeType.REMOVE)
     private User etudiantPostule;
 
-    private String refSemestre;
-
+    private Semestre semestre ;
     private double note;
 
 }

@@ -11,7 +11,10 @@ public class Filiere {
     @Column(name = "id", nullable = false)
     private Long id;
     private String nameOfFilier;
-    private String chefDeFiliere;
+
+    @ManyToOne
+    @JoinColumn(name = "chef_de_filiere_id")
+    private User chefDeFiliere;
 
 
 
