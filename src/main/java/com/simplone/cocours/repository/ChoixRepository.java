@@ -8,9 +8,15 @@ import java.util.List;
 
 @Repository
 public interface ChoixRepository extends JpaRepository<Choix,Long> {
+/*
+    Choix findByNumChoixAndAndEtudiantPostuleCne(int numChoix,String cne);
+*/
     Choix findByNumChoixAndAndEtudiantPostuleCne(int numChoix,String cne);
     List<Choix> findByConcours(String references);
+/*
     Choix findByRefConcoursOrderByEtudiantPostuleDiplomeEtudiantNoteDesc(String reference);
+*/
+    Choix findByConcoursOrderByEtudiantPostuleDesc(String reference);
 
 
 }

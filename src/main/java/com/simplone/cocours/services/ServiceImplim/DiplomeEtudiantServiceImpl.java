@@ -56,7 +56,7 @@ public class DiplomeEtudiantServiceImpl implements DiplomeEtudiantService {
             System.out.println(etudiantPostule.getDiplomeEtudiant().getMention());
             diplomeEtudiant.setMention(etudiantPostule.getDiplomeEtudiant().getMention());
             diplomeEtudiant.setAnneeObtention(etudiantPostule.getDiplomeEtudiant().getAnneeObtention());
-            diplomeEtudiant.setRefDiplome(etudiantPostule.getDiplomeEtudiant().getRefDiplome());
+            diplomeEtudiant.setNameDiplome(etudiantPostule.getDiplomeEtudiant().getNameDiplome());
             diplomeEtudiantRepository.save(diplomeEtudiant);
             return 1;
         }    }

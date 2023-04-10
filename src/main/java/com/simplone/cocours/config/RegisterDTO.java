@@ -1,4 +1,4 @@
-package config;
+package com.youcode.youbooking.config;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

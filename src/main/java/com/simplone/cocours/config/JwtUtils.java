@@ -1,4 +1,4 @@
-package config;
+package com.youcode.youbooking.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

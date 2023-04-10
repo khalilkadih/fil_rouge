@@ -9,8 +9,8 @@ import java.util.List;
 
 @Repository
 public interface DiplomeEtudiantRepository extends JpaRepository<DiplomeEtudiant,Long> {
-    Choix findByNumChoixAndAndEtudiantPostuleCne(int numChoix,String cne);
-    List<Choix> findByConcours(String references);
+    /*Choix findByNumChoixAndAndEtudiantPostuleCne(int numChoix,String cne);*/
+    /*List<Choix> findByConcours(String references);*/
 
 
 }

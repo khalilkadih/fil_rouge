@@ -1,4 +1,8 @@
-package config;
+package com.youcode.youbooking.config;
+
+import com.youcode.youbooking.Entity.Role;
+import com.youcode.youbooking.Entity.Users;
+import com.youcode.youbooking.Repository.UserRepository;
 import lombok.var;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

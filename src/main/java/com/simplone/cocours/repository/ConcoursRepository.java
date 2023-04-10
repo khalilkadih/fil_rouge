@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public interface ConcoursRepository extends JpaRepository<Concours, Long> {
 
-    Concours findByReference(String refernce);
+    Concours findByNameConcours(String refernce);
     Concours findByFiliere(String filiere);
 
     List<Concours> findByAnneeConcours(int anneConcours);

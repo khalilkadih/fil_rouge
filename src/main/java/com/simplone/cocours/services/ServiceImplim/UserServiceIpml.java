@@ -106,7 +106,7 @@ public class UserServiceIpml implements UserService {
         } else {
             int cmp = 0;
             for (Choix choix : choixs) {
-                if (concoursRepository.findByReference(choix.getConcours().toString()) != null) {
+                if (concoursRepository.findByNameConcours(choix.getConcours().toString()) != null) {
                     cmp++;
                 }
             }

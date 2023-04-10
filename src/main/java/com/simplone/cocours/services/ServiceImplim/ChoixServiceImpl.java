@@ -49,7 +49,7 @@ public class ChoixServiceImpl implements ChoixService {
 
     @Override
     public List<Choix> findByRefConcours(String reference) {
-        return (List<Choix>) this.choixRepository.findByRefConcoursOrderByEtudiantPostuleDiplomeEtudiantNoteDesc(reference);
+        return (List<Choix>) this.choixRepository.findByConcoursOrderByEtudiantPostuleDesc(reference);
     }
 
     @Override

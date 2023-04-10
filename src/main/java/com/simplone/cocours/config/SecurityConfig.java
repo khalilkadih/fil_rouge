@@ -1,4 +1,4 @@
-package config;
+package com.youcode.youbooking.config;
 
 import com.youcode.youbooking.dao.Userdata;
 import lombok.RequiredArgsConstructor;

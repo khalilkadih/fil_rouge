@@ -10,7 +10,9 @@ import java.util.List;
 @Repository
 public interface NoteSemesterRepository extends JpaRepository<NotesSemestre,Long> {
 
+/*
         NotesSemestre findByRefSemestreAAndAndEtudiantPostuleCne(String refernce);
+*/
 
 
 }
